@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue_primary">#4FC3F7</color>
+    <color name="blue_primary_dark">#29B6F6</color>
+    <color name="blue_accent">#E1F5FE</color>
+    <color name="blue_text">#1F2937</color>
+    <color name="blue_subtext">#6B7280</color>
+    <color name="white">#FFFFFF</color>
+    <color name="background_light">#F8FBFF</color>
+    <color name="card_stroke">#D6EAF8</color>
+    <color name="danger_red">#EF5350</color>
+    <color name="success_blue">#42A5F5</color>
+</resources>

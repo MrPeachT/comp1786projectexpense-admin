@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Expense"
+            android:textColor="@color/blue_text"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Enter expense details below"
+            android:textColor="@color/blue_subtext"
+            android:textSize="14sp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="18dp">
+
+                <ImageView
+                    android:id="@+id/imgExpenseFormPreview"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/darker_gray"
+                    android:contentDescription="Selected expense image"
+                    android:scaleType="centerCrop"
+                    android:src="@android:drawable/ic_menu_gallery" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnChooseExpenseImage"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/blue_accent"
+                        android:text="Choose Image"
+                        android:textAllCaps="false"
+                        android:textColor="@color/blue_primary_dark" />
+
+                    <Button
+                        android:id="@+id/btnRemoveExpenseImage"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/blue_primary_dark"
+                        android:text="Remove Image"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/etExpenseId"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="12dp"
+                    android:backgroundTint="@color/blue_primary"
+                    android:hint="Expense ID"
+                    android:textColor="@color/blue_text"
+                    android:textColorHint="@color/blue_subtext" />
+
+                <EditText
+                    android:id="@+id/etExpenseDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="12dp"
+                    android:backgroundTint="@color/blue_primary"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:hint="Date of Expense"
+                    android:textColor="@color/blue_text"
+                    android:textColorHint="@color/blue_subtext" />
+
+                <EditText
+                    android:id="@+id/etAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="12dp"
+                    android:backgroundTint="@color/blue_primary"
+                    android:hint="Amount"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/blue_text"
+                    android:textColorHint="@color/blue_subtext" />
+
+                <EditText
+                    android:id="@+id/etCurrency"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="12dp"
+                    android:backgroundTint="@color/blue_primary"
+                    android:hint="Currency (e.g. VND, USD)"
+                    android:textColor="@color/blue_text"
+                    android:textColorHint="@color/blue_subtext" />
+
+                <Spinner
+                    android:id="@+id/spinnerExpenseType"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="12dp" />
+
+                <Spinner
+                    android:id="@+id/spinnerPaymentMethod"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="12dp" />
+
+                <EditText
+                    android:id="@+id/etClaimant"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="12dp"
+                    android:backgroundTint="@color/blue_primary"
+                    android:hint="Claimant"
+                    android:textColor="@color/blue_text"
+                    android:textColorHint="@color/blue_subtext" />
+
+                <Spinner
+                    android:id="@+id/spinnerPaymentStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="12dp" />
+
+                <EditText
+                    android:id="@+id/etDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:backgroundTint="@color/blue_primary"
+                    android:gravity="top"
+                    android:hint="Description (Optional)"
+                    android:minLines="3"
+                    android:textColor="@color/blue_text"
+                    android:textColorHint="@color/blue_subtext" />
+
+                <Button
+                    android:id="@+id/btnSaveExpense"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="18dp"
+                    android:backgroundTint="@color/blue_primary"
+                    android:text="Save Expense"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

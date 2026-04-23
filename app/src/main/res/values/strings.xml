@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Expense Tracker (Dev)</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="project_name_placeholder">Project Name</string>
+    <string name="project_code_placeholder">Code: PRJ001</string>
+    <string name="project_manager_placeholder">Manager: John Doe</string>
+    <string name="project_status_placeholder">Status: Active</string>
+    <string name="project_budget_placeholder">Budget: 10000</string>
+</resources>
